@@ -1,3 +1,16 @@
+<!--
+         Name: Kayode Trinity
+
+         File: index.html
+
+         Date: 2025 Feb 06
+
+         This HTML file creates a Mozilla splash page using a header, 
+         an  YouTube video, and links to  differnt pictures. 
+         It includes pictures and the use of CSS to enhance the appeal.
+-->
+
+
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -6,7 +19,7 @@
     <title>Mozilla splash page</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <style>
-      /* header and body setup */
+      /* header and body */
 
       html {
         font-family: 'Open Sans', sans-serif;
@@ -88,7 +101,7 @@
         clear: both;
       }
 
-      /* Red panda image */
+      /* Red panda styling */
 
       .red-panda img {
         display: block;
@@ -97,43 +110,48 @@
     </style>
   </head>
   <body>
+
     <header>
       <h1>Mozilla</h1>
-      <!-- insert <img> element, link to the small
-          version of the Firefox logo -->
-
+      <img src="firefox_logo-only_RGB.png" alt="Firefox Logo" width="100">
     </header>
 
     <main>
       <article>
-        <!-- insert iframe from youtube -->
-
+        <iframe width="400" height="225" src="https://www.youtube.com/embed/ojcNcvb1olg" frameborder="0" allowfullscreen></iframe>
         <h2>Rocking the free web</h2>
 
-        <p>Mozilla are a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
+
+        <p>Mozilla are a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. 
+          We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
+
 
         <p>Click on the images below to find more information about the cool stuff Mozilla does. <a href="https://www.flickr.com/photos/mathiasappel/21675551065/">Red panda picture</a> by Mathias Appel.</p>
+
       </article>
 
       <div class="further-info">
-        <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img>
+          <img src="firefox_logo-only_RGB.png" alt="Firefox Img"  width="400">
         </a>
+
         <a href="https://www.mozilla.org/">
-          <img>
+          <img src="mozilla-dinosaur-head.png" alt="Mozilla website" width="400">
         </a>
+
         <a href="https://addons.mozilla.org/">
-          <img>
+          <img src="firefox-addons.jpg" alt="Firefox addon" width="400">
         </a>
+
         <a href="https://developer.mozilla.org/en-US/">
-          <img>
+          <img src="mdn.svg" alt="mdn" width="400">
         </a>
+
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
-        <!-- insert picture element -->
+        <img src="red-panda.jpg" alt="Red Panda" width="1200">
       </div>
 
     </main>
