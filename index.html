@@ -1,182 +1,164 @@
-<!--HTML Comments --> 
-	<!--
-	Name: Kayode Trinity
-	File: filename.html
-	Date: 07 Feb 2025
-This is an HTML fiile to show the planets in the solar systemm and some information about them 
-	-->
+<!--
+         Name: Kayode Trinity
+
+         File: index.html
+
+         Date: 2025 Feb 06
+
+         This HTML file creates a Mozilla splash page using a header, 
+         an  YouTube video, and links to  differnt pictures. 
+         It includes pictures and the use of CSS to enhance the appeal.
+-->
 
 
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Mozilla splash page</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <style>
+      /* header and body */
+
+      html {
+        font-family: 'Open Sans', sans-serif;
+        background: url(pattern.png);
+      }
+
+      body {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: white;
+        position: relative;
+      }
+
+      /* Header styling */
+
+      header {
+        height: 150px;
+      }
+
+      header img {
+        width: 100px;
+        position: absolute;
+        right: 32.5px;
+        top: 32.5px;
+      }
+
+      h1 {
+        font-size: 50px;
+        line-height: 140px;
+        margin: 0 0 0 32.5px;
+      }
+
+      /* main section and video styling */
+
+      main {
+        background: #ccc;
+      }
+
+      article {
+        padding: 20px;
+      }
+
+      h2 {
+        margin-top: 0;
+      }
+
+      p {
+        line-height: 2;
+      }
+
+      iframe {
+        float: left;
+        margin: 0 20px 20px 0;
+        max-width: 100%;
+      }
+
+      /* further info links */
+
+      .further-info {
+        clear: left;
+        padding: 40px 0;
+        background: #c13832;
+        box-shadow: inset 0 3px 2px rgba(0,0,0,0.5),
+                    inset 0 -3px 2px rgba(0,0,0,0.5);
+      }
+
+      .further-info a {
+        width: 25%;
+        display: block;
+        float: left;
+      }
+
+      .further-info img {
+        max-width: 100%;
+      }
+
+      .clearfix {
+        clear: both;
+      }
+
+      /* Red panda styling */
+
+      .red-panda img {
+        display: block;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>Mozilla</h1>
+      <img src="firefox_logo-only_RGB.png" alt="Firefox Logo" width="100">
+    </header>
+
+    <main>
+      <article>
+        <iframe width="400" 
+        height="225" 
+        src="https://www.youtube.com/embed/ojcNcvb1olg" 
+          title="Mozilla video"       
+          allowfullscreen>
+      </iframe>
+
+        <h2>Rocking the free web</h2>
 
 
+        <p>Mozilla are a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
 
 
-  <!DOCTYPE html>
-  <html lang="en-US">
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width">
-      <title>Planet Data</title>
-      <link href="minimal-table.css" rel="stylesheet" type="text/css">
-    </head>
-    
-    <body>
-      <h1>Planet data</h1>
-  
-  <table>
-    <caption>
-      Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).
-    </caption>
-    <colgroup>
-    <col span="12">
-  </colgroup>
-      <thead>
-        <tr>
-          <td colspan="2"> </td> 
-         <th scope="col"> Name</th>
-         <th scope="col"> Mass (10<sup>24</sup>kg)</th>
-        <th scope="col">  Diameter (km)</th>
-         <th scope="col"> Density (kg/m<sup>3</sup>)</th>
-         <th scope="col"> Gravity (m/s<sup>2</sup>)</th>
-         <th scope="col"> Length of day (hours)</th>
-         <th scope="col"> Distance from Sun (10<sup>6</sup>km)</th>
-          <th scope="col">Mean temperature (°C)</th>
-         <th scope="col"> Number of moons</th>
-         <th scope="col"> Notes</th>
-  
-  
-  
-        </tr>
-      </thead> 
-      <tbody>
-  <tr>
-    <th colspan="2" rowspan="4">Terrestrial planets</th>
-    <th>Mercury</th>
-  <td>  0.330 </td>
-   <td> 4,879 </td>
-  <td>  5427 </td>
-  <td>  3.7 </td>
-  <td>  4222.6 </td>
-  <td>  57.9 </td>
-  <td>  167 </td>
-  <td>  0 </td>
-  <td>  Closest to the Sun</td>
-    </tr>
-  
-  
-    <tr>
-      <th>Venus</th>
-     <td> 4.87 </td>
-     <td> 12,104 </td>
-     <td> 5243 </td>
-     <td> 8.9 </td>
-     <td> 2802.0 </td>
-     <td> 108.2 </td>
-      <td>464 </td>
-      <td>0</td>
-      <td></td>
-    </tr>
-  
-  
-    <tr>
-      <th scope="row"> Earth</th>
-     <td> 5.97</td>  
-    <td>  12,756 </td>
-     <td> 5514 </td>
-     <td> 9.8 </td>
-     <td> 24.0 </td>
-     <td> 149.6 </td>
-     <td> 15 </td>
-     <td> 1 </td>
-     <td> Our world</td>
-    </tr>
-  
-    <tr>
-      <th>Mars</th>
-     <td> 0.642 </td>
-     <td> 6,792 </td>
-     <td> 3933 </td>
-     <td> 3.7 </td>
-     <td> 24.7 </td>
-     <td> 227.9 </td>
-     <td> -65 </td>
-     <td> 2 </td>
-      <td>The red planet</td>
-    </tr>
-  
-  <tr>
-    <th rowspan="4">Jovian planets</th>
-    <th rowspan="2">Gass giants</th>
-    <th>Jupiter</th>
-    <td>1898</td>
-    <td> 142,984 </td>
-    <td> 1326 </td>
-    <td> 23.1 </td>
-    <td> 9.9 </td>
-    <td> 778.6</td>
-    <td>  -110 </td>
-    <td>  67 </td>
-    <td>  The largest planet</td>
-  
-  </tr>
-  
-  <tr>
-    <th>Saturn</th>
-   <td> 568 </td>
-   <td> 120,536 </td>
-   <td> 687 </td>
-   <td> 9.0 </td>
-   <td> 10.7 </td>
-   <td> 1433.5 </td>
-    <td>-140 </td>
-      <td>62</td>
-      <td></td>
-  </tr>
-  
-  <tr>
-    <th rowspan="2">Ice Giants</th>
-    <th>Uranus</th>
-   <td> 86.8 </td>
-   <td> 51,118 </td>
-   <td> 1271 </td>
-   <td> 8.7 </td>
-   <td> 17.2 </td>
-    <td>2872.5 </td>
-    <td>-195 </td>
-    <td>27</td>
-    <td></td>
-  </tr>  
-  <tr>
-    <th scope="row">Neptune</th>
-   <td> 102 </td>
-   <td> 49,528 </td>
-   <td> 1638 </td>
-   <td> 11.0 </td>
-   <td> 16.1 </td>
-   <td> 4495.1 </td>
-   <td> -200 </td>
-   <td> 14</td>
-   <td></td>
-  </tr>
-  
-  
-  <tr>
-    <th scope="rowgroup" colspan="2">Dwarf planets</th>
-  <th scope="row">pluto</th>
-    <td>0.0146 </td>
-   <td> 2,370 </td>
-   <td> 2095 </td>
-   <td> 0.7 </td>
-   <td> 153.3 </td>
-   <td> 5906.4 </td>
-   <td> -225 </td>
-   <td> 5 </td>
-   <td> Declassified as a planet in 2006, but this <a href="http://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">remains controversial</a>.</td>
-  </tr>
-  
-      </tbody>
-  </table>
-  
-    </body>
-  </html>
-  
+        <p>Click on the images below to find more information about the cool stuff Mozilla does. <a href="https://www.flickr.com/photos/mathiasappel/21675551065/">Red panda picture</a> by Mathias Appel.</p>
+
+      </article>
+
+      <div class="further-info">
+        <a href="https://www.mozilla.org/en-US/firefox/new/">
+          <img src="firefox_logo-only_RGB.png" alt="Firefox Img"  width="400">
+        </a>
+
+        <a href="https://www.mozilla.org/">
+          <img src="mozilla-dinosaur-head.png" alt="Mozilla website" width="400">
+        </a>
+
+        <a href="https://addons.mozilla.org/">
+          <img src="firefox-addons.jpg" alt="Firefox addon" width="400">
+        </a>
+
+        <a href="https://developer.mozilla.org/en-US/">
+          <img src="mdn.svg" alt="mdn" width="400">
+        </a>
+
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="red-panda">
+        <img src="red-panda.jpg" alt="Red Panda" width="1200">
+      </div>
+
+    </main>
+  </body>
+</html>
